@@ -1,0 +1,11 @@
+{
+  "sumo.blades" : [ {
+    "type" : "localWildCard",
+    "name" : "syslog",
+    "pathExpression" : "/var/log/system.log",
+    "category" : "syslog"
+  } ],
+  "name" : "MacOS System Logs",
+  "description" : "System logs in Mac OS"
+}
+

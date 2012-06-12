@@ -1,0 +1,8 @@
+#!/bin/bash
+# Absolute path to this script, e.g. /home/user/bin/foo.sh
+HERE=`dirname $0`
+MODULE_HOME=`cd $HERE/..; pwd`
+echo "MODULE_HOME: $MODULE_HOME"
+cd $MODULE_HOME
+. $MODULE_HOME/bin/jvm.options
+java -cp "$MODULE_HOME/lib/*" $JVM_ARGS com.sumologic.scala.collector.Collector $*

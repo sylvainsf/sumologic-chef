@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Common JVM args for all collector scripts.
+JVM_ARGS="-Dcom.sun.management.jmxremote.port=3400"
+JVM_ARGS="$JVM_ARGS -Dcom.sun.management.jmxremote.authenticate=false"
+JVM_ARGS="$JVM_ARGS -Dcom.sun.management.jmxremote.ssl=false"
+JVM_ARGS="$JVM_ARGS -Dcom.sun.management.jmxremote"
+JVM_ARGS="$JVM_ARGS -server"
+JVM_ARGS="$JVM_ARGS -verbose:gc"
+JVM_ARGS="$JVM_ARGS -Xmx128m -Xms32m"
+JVM_ARGS="$JVM_ARGS -XX:+UseParallelGC"
+JVM_ARGS="$JVM_ARGS -XX:+AggressiveOpts"
+JVM_ARGS="$JVM_ARGS -XX:+UseFastAccessorMethods"
+JVM_ARGS="$JVM_ARGS -XX:+DisableExplicitGC"
+JVM_ARGS="$JVM_ARGS -XX:+HeapDumpOnOutOfMemoryError"
+JVM_ARGS="$JVM_ARGS $DEBUG_OPTIONS"

@@ -1,0 +1,10 @@
+{
+  "sumo.blades" : [ {
+    "type" : "localWildCard",
+    "name" : "syslog",
+    "pathExpression" : "/var/log/syslog",
+    "category" : "syslog"
+  } ],
+  "name" : "Linux System Logs",
+  "description" : "System logs in Linux"
+}

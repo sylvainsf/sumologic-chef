@@ -1,0 +1,11 @@
+{
+<% # TODO: put app specific logic here to customize the log tailers. %>
+  "sumo.blades" : [ {
+    "type" : "localWildCard",
+    "name" : "SampleApplication",
+    "pathExpression" : "/path/to/your/logs/*.log",
+    "category" : "application"
+  } ],
+  "name" : "Company",
+  "description" : "Application logs"
+}
